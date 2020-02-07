@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+
+<h1>AddressBook</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th> Address Books </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${addressBooks.isEmpty()}">
+        <td colspan="2"> No Address Books Available </td>
+    </tr>
+    <tr th:each="addressbook : ${addressBooks}">
+        <table>
+            <thead>
+            <tr>
+                <th> First Name </th>
+                <th> Number </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:if="${addressbook.getBuddies().isEmpty()}">
+                <td colspan="2"> No buddies Available </td>
+            </tr>
+            <tr th:each="buddy : ${addressbook.getBuddies()}">
+                <td><span th:text="${buddy.getName()}"> Name </span></td>
+                <td><span th:text="${buddy.getCell()}"> Number </span></td>
+            </tr>
+            </tbody>
+        </table>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+
+</html>

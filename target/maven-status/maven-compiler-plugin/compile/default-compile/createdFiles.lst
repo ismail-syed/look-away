@@ -1,0 +1,12 @@
+App/AddressBookController.class
+App/BuddyInfo.class
+App/BuddyInfoController.class
+App/Launcher.class
+App/BuddyInfoRepository.class
+App/AddressBookRepository.class
+Views/BuddyInfoMenu.class
+Views/AddressBookView.class
+App/SpringApp.class
+App/App.class
+App/AddressBook.class
+Views/AddressBookMenu.class

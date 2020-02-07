@@ -15,12 +15,5 @@ public class SpringApp {
 
     public static void main(String[] args) {
         SpringApplication.run(SpringApp.class);
-//        SpringApplication.run(ServingWebContentApplication.class, args);
-    }
-
-    @Bean
-    public CommandLineRunner demo(AddressBookRepository addressBookRepo, BuddyInfoRepository buddyRepo) {
-        return (args) -> {
-        };
     }
 }
