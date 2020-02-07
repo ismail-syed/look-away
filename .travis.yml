@@ -1,5 +1,4 @@
 language: java
-before_install: cd src
 deploy:
   provider: heroku
   api-key:
